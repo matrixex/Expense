@@ -1,0 +1,35 @@
+﻿<Window x:Class="expense.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        
+        mc:Ignorable="d"
+        Title="记账本" Height="568" Width="873">
+    <GroupBox Header="" HorizontalAlignment="Left" Height="492" Margin="30,21,0,0" VerticalAlignment="Top" Width="812">
+        <Grid x:Name="select_date" Margin="155,0,114,5" Height="455" VerticalAlignment="Bottom">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="0*"/>
+                <RowDefinition Height="82*"/>
+                <RowDefinition Height="37*"/>
+            </Grid.RowDefinitions>
+            <DatePicker x:Name="date_picker" Margin="0,10,201,0" Width="98" Height="27" HorizontalContentAlignment="Stretch" BorderBrush="{x:Null}" VerticalAlignment="Top" VerticalContentAlignment="Center" HorizontalAlignment="Right" Grid.RowSpan="2"/>
+            <Label Content="类别" HorizontalAlignment="Left" Margin="55,69,0,0" VerticalAlignment="Top" RenderTransformOrigin="1.228,-1.152" Width="64" Background="{x:Null}" FontFamily="Microsoft YaHei UI Light" FontSize="14" Height="32" Grid.RowSpan="2"/>
+            <ComboBox x:Name="cmb" HorizontalAlignment="Left" Margin="176,67,0,0" VerticalAlignment="Top" Width="154" Height="23" Grid.RowSpan="2"  />
+            <Label Content="描述" HorizontalAlignment="Left" Margin="55,136,0,0" VerticalAlignment="Top" Width="52" FontSize="14" Height="32" Grid.RowSpan="2"/>
+            <Button Content="确认" HorizontalAlignment="Left" Margin="358,57,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click" Grid.Row="2"/>
+            <TextBox x:Name="money" HorizontalAlignment="Left" Height="23" Margin="176,240,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="193" Grid.Row="1" />
+            <TextBox x:Name="describe" HorizontalAlignment="Left" Height="61" Margin="176,136,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="193" Background="#FF8DAE65" Grid.RowSpan="2"/>
+            <Label Content="金额" HorizontalAlignment="Left" Margin="55,240,0,0" VerticalAlignment="Top" Width="68"  FontSize="14" Height="32" Grid.Row="1"/>
+            <Label Content="选择插入的数据库" HorizontalAlignment="Left" Margin="28,286,0,0" VerticalAlignment="Top" Width="130"  FontSize="14" Height="32" Grid.Row="1" Grid.RowSpan="2"/>
+            <ComboBox x:Name="table_select" HorizontalAlignment="Left" Margin="176,286,0,0" VerticalAlignment="Top" Width="120" Grid.Row="1"/>
+            <Button Content="下一页" HorizontalAlignment="Left" Margin="28,112,0,0" Grid.Row="2" VerticalAlignment="Top" Width="95" Click="Button_Click_1"/>
+
+
+
+
+
+
+        </Grid>
+    </GroupBox>
+</Window>
